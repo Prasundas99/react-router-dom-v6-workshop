@@ -1,3 +1,6 @@
+/**
+ *  component that will scroll the window up on every navigation:
+ */
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
