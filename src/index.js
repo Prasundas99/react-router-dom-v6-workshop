@@ -18,9 +18,11 @@ import {
   useNavigate, //Alternative to history
   useLocation //Gives data present in current location or route
 } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop.js"
 
 ReactDOM.render(
   <Router>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/myapps" element={<Navigate replace to="/learn" />} /> {/*Add Replace to exit the behavior of stack holding its place*/}
